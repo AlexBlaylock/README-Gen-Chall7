@@ -20,7 +20,8 @@ function generateMarkdown(data) {
     tableOfContents = '## Table of Contents\n';
 
     data.toc.forEach((section) => {
-      tableOfContents += `- [${section}](#${section.toLowerCase()})\n`;
+      const lowercaseSection = section.toLowerCase();
+      tableOfContents += `- [${section}](#${lowercaseSection})\n`;
     });
   }
 // used something similar to the mini proj
@@ -28,25 +29,25 @@ function generateMarkdown(data) {
 
 ${tableOfContents}
 
-## Description
+## description
 ${data.desc}
 
-## Installation
+## installation
 ${data.install}
 
-## License
+## license
 ${renderLicenseBadge(data.license)}  ${renderLicenseLink(data.license)}
 
-## Usage
+## use
 ${data.use}
 
-## Tests
+## testing
 ${data.testing}
 
-## Contributing
+## contribution
 ${data.contribution}
 
-## Questions
+## questions
 For questions, you can reach me at [GitHub Profile](https://github.com/${data.github}) or via email at ${data.email}.`;
 }
 

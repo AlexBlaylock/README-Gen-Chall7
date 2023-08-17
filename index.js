@@ -23,19 +23,19 @@ const questions = [
           name: 'toc',
           choices: [
             {
-              name: 'Installation',
+              name: 'installation',
             },
             {
-              name: 'Licensing',
+              name: 'licensing',
             },
             {
-              name: 'Contributions',
+              name: 'contributions',
             },
             {
-              name: 'Testing',
+              name: 'testing',
             },
             {
-              name: 'Questions',
+              name: 'questions',
             },
           ]
         },
@@ -79,7 +79,7 @@ const questions = [
           // test instructions
           {
             type: 'input',
-            message: 'How do you use this project?',
+            message: 'How did you test for this project?',
             name: 'testing',
           },
           // email and github
@@ -103,8 +103,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then(({ title, desc, toc, install, use, license, contribution, testing, username, email }) => {
-    const markdown = generateMarkdown({ title, desc, toc, install, use, license, contribution, testing, username, email });
+  inquirer.prompt(questions).then(({ title, desc, toc, install, use, license, contribution, testing, github, email }) => {
+    const markdown = generateMarkdown({ title, desc, toc, install, use, license, contribution, testing, github, email });
     writeToFile('README.md', markdown);
     console.log('README.md generated successfully');
   });
