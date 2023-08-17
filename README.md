@@ -9,7 +9,7 @@
 
 
 ## description
-Generates a ReadMe using inquirer prompting and writing the answers to a markdown file.
+A ReadMe generator that uses inquirer to prompt questions and write the answers to a markdown file.
 
 ## installation
 There is no deployed application.
@@ -18,13 +18,13 @@ There is no deployed application.
 This project is licensed by ![License](https://img.shields.io/badge/License-MIT-yellow.svg) [MIT License](https://opensource.org/licenses/MIT).
 
 ## use
-You open the file in a terminal and answer the prompts, generating your ReadMe.
+You would use this project to create a readme for something ex. job applcation. You do this through using a terminal and answering the inquirer prompt.
 
 ## testing
-I used VSCode integrated node terminal
+I tested using VSCode integrated terminal.
 
 ## contribution
-Add more customization to answers, such as depth of how many licenses.
+Add more in depth questions, add more licenses, add more styling.
 
 ## questions
 For questions, you can reach me at my [GitHub Profile](https://github.com/AlexBlaylock) or via email at alexb9901@hotmail.com.
