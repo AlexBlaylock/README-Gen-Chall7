@@ -29,7 +29,7 @@ const questions = [
               name: 'licensing',
             },
             {
-              name: 'contributions',
+              name: 'contribution',
             },
             {
               name: 'testing',
