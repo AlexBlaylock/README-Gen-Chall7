@@ -28,3 +28,7 @@ Add more indepth styling to the markdown, make a deployed application, fix link 
 
 ## questions
 For questions, you can reach me at my [GitHub Profile](https://github.com/AlexBlaylock) or via email at alexb9901@hotmail.com.
+
+Post video submission: 
+
+Thank you to Nate Master, and Jo Giancola for helping me on sections of this project. Thank you to Tom Hearne and Matthew Bronstein for teaching a great class.
