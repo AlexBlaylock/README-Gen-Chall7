@@ -1,4 +1,4 @@
-# Challenge 9 8/17/23
+# Challenge 9 ReadMe Generator
 
 ## Table of Contents
 - [installation](#installation)
@@ -9,7 +9,7 @@
 
 
 ## description
-Challenge 9 for my bootcamp
+Generates a ReadMe using inquirer prompting and writing the answers to a markdown file.
 
 ## installation
 There is no deployed application.
@@ -18,13 +18,13 @@ There is no deployed application.
 This project is licensed by ![License](https://img.shields.io/badge/License-MIT-yellow.svg) [MIT License](https://opensource.org/licenses/MIT).
 
 ## use
-You generate the readme through the terminal.
+You open the file in a terminal and answer the prompts, generating your ReadMe.
 
 ## testing
-I used my vscode node terminal.
+I used VSCode integrated node terminal
 
 ## contribution
-People can add more customization to answers in the inquirer prompt.
+Add more customization to answers, such as depth of how many licenses.
 
 ## questions
 For questions, you can reach me at my [GitHub Profile](https://github.com/AlexBlaylock) or via email at alexb9901@hotmail.com.
