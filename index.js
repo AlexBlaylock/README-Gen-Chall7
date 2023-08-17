@@ -2,6 +2,8 @@
 const fs = require('fs');
 
 const inquirer = require('inquirer');
+
+const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 // very similar to what we used on activity 20
 const questions = [
@@ -66,6 +68,7 @@ const questions = [
           },
           {
             name: 'Other',
+          }]
           },
           // contrib
           {
@@ -90,13 +93,12 @@ const questions = [
             message: 'Contact Information (Email)',
             name: 'email',
           },
-        ]
-      },
-];
+        ];
+    
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeToFileSync(fileName, data);
+  fs.writeFileSync(fileName, data);
 }
 
 // TODO: Create a function to initialize app
