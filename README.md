@@ -1,4 +1,4 @@
-# test
+# t
 
 ## Table of Contents
 - [installation](#installation)
@@ -9,24 +9,22 @@
 
 
 ## description
-test
+t
 
 ## installation
-test
-
+t
 
 ## license
-This project is licensed under the [MIT License]([MIT License](https://opensource.org/licenses/MIT)) license.
- ![License](https://img.shields.io/badge/License-MIT-yellow.svg) 
+This project is licensed by ![License](https://img.shields.io/badge/License-MIT-yellow.svg) [MIT License](https://opensource.org/licenses/MIT).
 
 ## use
-test
+t
 
 ## testing
-test
+t
 
 ## contribution
-test
+t
 
 ## questions
-For questions, you can reach me at my [GitHub Profile](https://github.com/test) or via email at test.
+For questions, you can reach me at my [GitHub Profile](https://github.com/t) or via email at t.

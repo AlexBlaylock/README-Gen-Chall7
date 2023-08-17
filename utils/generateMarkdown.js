@@ -37,20 +37,20 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license) {
-    const licenseText = `This project is licensed under the [${license}](${renderLicenseLink(license)}) license.\n`;
+// function renderLicenseSection(license) {
+//   if (license) {
+//     const licenseText = `This project is licensed under the [${license}](${renderLicenseLink(license)}) license.\n`;
 
-    return `## license\n${licenseText}`;
-  }
+//     return `## license\n${licenseText}`;
+//   }
   
-  return '';
-}
+//   return '';
+// }
+// could never get this to work properly
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let tableOfContents = '';
-  const licenseSection = renderLicenseSection(data.license);
 
   if (data.toc && data.toc.length > 0) {
     tableOfContents = '## Table of Contents\n';
@@ -71,8 +71,8 @@ ${data.desc}
 ## installation
 ${data.install}
 
-
-${licenseSection} ${renderLicenseBadge(data.license)} 
+## license
+This project is licensed by ${renderLicenseBadge(data.license)} ${renderLicenseLink(data.license)}.
 
 ## use
 ${data.use}
