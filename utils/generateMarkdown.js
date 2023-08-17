@@ -61,7 +61,7 @@ function generateMarkdown(data) {
     });
   }
 // used something similar to the mini proj
-  return `# ${data.title}
+  return `# ${data.title} ${renderLicenseBadge(data.license)}
 
 ${tableOfContents}
 
@@ -72,7 +72,7 @@ ${data.desc}
 ${data.install}
 
 ## license
-This project is licensed by ${renderLicenseBadge(data.license)} ${renderLicenseLink(data.license)}.
+This project is licensed by ${renderLicenseLink(data.license)}.
 
 ## use
 ${data.use}
