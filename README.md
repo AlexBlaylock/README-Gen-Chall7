@@ -1,4 +1,4 @@
-# t
+# Challenge 9 8/17/23
 
 ## Table of Contents
 - [installation](#installation)
@@ -9,22 +9,22 @@
 
 
 ## description
-t
+Challenge 9 for my bootcamp
 
 ## installation
-t
+There is no deployed application.
 
 ## license
 This project is licensed by ![License](https://img.shields.io/badge/License-MIT-yellow.svg) [MIT License](https://opensource.org/licenses/MIT).
 
 ## use
-t
+You generate the readme through the terminal.
 
 ## testing
-t
+I used my vscode node terminal.
 
 ## contribution
-t
+People can add more customization to answers in the inquirer prompt.
 
 ## questions
-For questions, you can reach me at my [GitHub Profile](https://github.com/t) or via email at t.
+For questions, you can reach me at my [GitHub Profile](https://github.com/AlexBlaylock) or via email at alexb9901@hotmail.com.
