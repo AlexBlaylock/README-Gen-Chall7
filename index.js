@@ -16,28 +16,41 @@ const questions = [
         name: 'desc',
       },
       {
-        type: 'checkbox',
-        message: 'What do you want to include in your table of contents?',
-        name: 'toc',
-        choices: [
+          type: 'checkbox',
+          message: 'Select what you want to include in your Table of Contents',
+          name: 'toc',
+          choices: [
             {
-                name: ''
-            }
-
-        ]
-      },
+              name: 'Installation',
+            },
+            {
+              name: 'Licensing',
+            },
+            {
+              name: 'Contributions',
+            },
+            {
+              name: 'Testing',
+            },
+            {
+              name: 'Questions',
+            },
+          ]
+        },
+        // install
       {
         type: 'input',
         message: 'How do you install this project?',
         name: 'install',
       },
+      // use
       {
         type: 'input',
         message: 'How do you use this project?',
         name: 'use',
       },
       {
-        // chose MIT license, a common one, and then the other top 2 licenses
+        // chose top 3 most used licenses.
         type: 'checkbox',
         message: 'What license are you using?',
         name: 'license',
@@ -49,17 +62,47 @@ const questions = [
             name: 'Apache License 2.0',
           },
           {
-            name: 'GNU General Public License (GPL) v3',
+            name: 'GPLv2',
+          },
+          {
+            name: 'Other',
+          },
+          // contrib
+          {
+            type: 'input',
+            message: 'What are future plans? What can people contribute?',
+            name: 'contribution',
+          },
+          // test instructions
+          {
+            type: 'input',
+            message: 'How do you use this project?',
+            name: 'testing',
+          },
+          // email and github
+          {
+            type: 'input',
+            message: 'Contact Information (Github and Email)',
+            name: 'contact',
           },
         ]
       },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeToFileSync(fileName, data);
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.promopt(questions).then(({ title, desc, toc, install, use, license, contribution, testing, contact}) => {
+    const [username, email] = contact.split(',').map(item => item.trim());
+    const markdown = generateMarkdown({ title, desc, toc, install, use, license, contribution, testing, username, email });
+    writeToFile('README.md', markdown);
+    console.log('readme generated successfully');
+  }); 
+};
 
 // Function call to initialize app
 init();
