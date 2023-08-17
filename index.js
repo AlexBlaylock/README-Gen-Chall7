@@ -82,8 +82,13 @@ const questions = [
           // email and github
           {
             type: 'input',
-            message: 'Contact Information (Github and Email)',
-            name: 'contact',
+            message: 'Contact Information (Github)',
+            name: 'github',
+          },
+          {
+            type: 'input',
+            message: 'Contact Information (Email)',
+            name: 'email',
           },
         ]
       },
@@ -96,13 +101,12 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.promopt(questions).then(({ title, desc, toc, install, use, license, contribution, testing, contact}) => {
-    const [username, email] = contact.split(',').map(item => item.trim());
+  inquirer.prompt(questions).then(({ title, desc, toc, install, use, license, contribution, testing, username, email }) => {
     const markdown = generateMarkdown({ title, desc, toc, install, use, license, contribution, testing, username, email });
     writeToFile('README.md', markdown);
-    console.log('readme generated successfully');
-  }); 
-};
+    console.log('README.md generated successfully');
+  });
+}
 
 // Function call to initialize app
 init();

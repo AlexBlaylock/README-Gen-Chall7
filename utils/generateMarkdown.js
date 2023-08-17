@@ -21,7 +21,7 @@ function generateMarkdown(data) {
       tableOfContents += `- [${section}](#${section.toLowerCase()})\n`;
     });
   }
-
+// used something similar to the mini proj
   return `# ${data.title}
 
 ${tableOfContents}
