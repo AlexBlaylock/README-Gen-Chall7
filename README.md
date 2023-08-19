@@ -32,3 +32,5 @@ For questions, you can reach me at my [GitHub Profile](https://github.com/AlexBl
 Post video submission: 
 
 Thank you to Nate Master, and Jo Giancola for helping me on sections of this project. Thank you to Tom Hearne and Matthew Bronstein for teaching a great class.
+video:
+https://drive.google.com/file/d/1qtPab2EmI4ownTjCCnhbUhSHNAUA9-p-/view
